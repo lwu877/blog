@@ -1,21 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
-
+const defaultTheme = require("tailwindcss/defaultTheme")
 module.exports = {
-	darkMode: 'class',
-	content: ['./src/**/*.{astro,html,js,md,mdx,ts}'],
-	theme: {
-		extend: {
-			colors: {
-				white: '#f8f9fa'
-			},
-			fontFamily: {
-				body: ['Manrope', ...defaultTheme.fontFamily.sans]
-			},
-			gridTemplateColumns: {
-				list: 'repeat(auto-fill, minmax(400px, max-content))'
-			}
-		}
-	},
-	plugins: [require('@tailwindcss/typography')]
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  darkMode: "class", // allows toggling dark mode manually
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Roboto", "sans-serif", ...defaultTheme.fontFamily.sans],
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/typography")],
 }

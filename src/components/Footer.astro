@@ -1,7 +1,13 @@
 ---
-const today = new Date()
+
+import {profileConfig} from "../config";
+
 ---
 
-<footer class='flex justify-center items-center w-full px-16 h-28 border-t-2'>
-	&copy; {today.getFullYear()} Lex Wu. All rights reserved.
-</footer>
+<div class="card-base max-w-[var(--page-width)] min-h-[4.5rem] rounded-b-none mx-auto flex items-center px-6">
+    <div class="transition text-50 text-sm">
+        © 2023 {profileConfig.name}. All Rights Reserved.
+        <br>
+        Powered by <a class="link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a>
+    </div>
+</div>

@@ -1,22 +1,16 @@
 import { defineCollection, z } from 'astro:content'
-import { CATEGORIES } from '@/data/categories'
 
-const blog = defineCollection({
-	// Type-check frontmatter using a schema
-	schema: ({ image }) =>
-		z.object({
-			title: z.string().max(80),
-			description: z.string(),
-			// Transform string to Date object
-			pubDate: z
-				.string()
-				.or(z.date())
-				.transform((val) => new Date(val)),
-			heroImage: image(),
-			category: z.enum(CATEGORIES),
-			tags: z.array(z.string()),
-			draft: z.boolean().default(false)
-		})
+const postsCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    published: z.date(),
+    draft: z.boolean().optional(),
+    description: z.string().optional(),
+    image: z.string().optional(),
+    tags: z.array(z.string()).optional(),
+    category: z.string().optional(),
+  }),
 })
-
-export const collections = { blog }
+export const collections = {
+  posts: postsCollection,
+}
