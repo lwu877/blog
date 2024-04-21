@@ -38,17 +38,12 @@ export const profileConfig: ProfileConfig = {
     {
       name: 'Twitter',
       icon: 'fa6-brands:twitter',
-      url: 'https://twitter.com',
-    },
-    {
-      name: 'Steam',
-      icon: 'fa6-brands:steam',
-      url: 'https://store.steampowered.com',
+      url: 'https://twitter.com/lwu877',
     },
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
-      url: 'https://github.com/saicaca/fuwari',
+      url: 'https://github.com/lwu877',
     },
   ],
 }
