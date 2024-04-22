@@ -5,4 +5,3 @@ Hi, I'm Lex. I'm a musician that created a separate website for blogposts. [I al
 This blog is built with [Fuwari](https://github.com/saicaca/fuwari), licensed under the MIT License.
 
 Important note: content on this website is __NOT LICENSED__ for public usage. 
-
