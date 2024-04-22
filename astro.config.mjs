@@ -27,7 +27,7 @@ const oklchToHex = str => {
 export default defineConfig({
   site: "https://blog.lexwu.com/",
   base: "/",
-  integrations: [tailwind(), swup({
+  integrations: [sitemap(), tailwind(), swup({
     theme: false,
     animationClass: 'transition-',
     containers: ['main'],
