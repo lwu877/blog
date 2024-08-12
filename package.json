@@ -36,7 +36,7 @@
     "sharp": "^0.33.2",
     "svelte": "^4.2.12",
     "tailwindcss": "^3.4.1",
-    "tinacms": "^1.6.1",
+    "tinacms": "^0.43.3",
     "typescript": "^5.4.2"
   },
   "devDependencies": {
@@ -48,7 +48,7 @@
     "@iconify-json/material-symbols": "^1.1.74",
     "@rollup/plugin-yaml": "^4.1.2",
     "@tailwindcss/typography": "^0.5.10",
-    "@tinacms/cli": "^1.5.43",
+    "@tinacms/cli": "^1.5.26",
     "@types/node": "^20.12.7",
     "stylus": "^0.63.0"
   }
