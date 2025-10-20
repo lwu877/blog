@@ -4,17 +4,17 @@ export const themeConfig: ThemeConfig = {
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   site: {
     // site title
-    title: 'Retypeset',
+    title: 'Lex Wu\'s Blog',
     // site subtitle
-    subtitle: 'Revive the beauty of typography',
+    subtitle: 'A blog from a musician that does way too much other stuff.',
     // site description
     description: 'Retypeset is a static blog theme based on the Astro framework. Inspired by Typography, Retypeset establishes a new visual standard and reimagines the layout of all pages, creating a reading experience reminiscent of paper books, reviving the beauty of typography. Details in every sight, elegance in every space.',
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
-    i18nTitle: true, // true, false
+    i18nTitle: false, // true, false
     // author name
-    author: 'radishzz',
+    author: 'Lex Wu',
     // site url
-    url: 'https://retypeset.radishzz.cc',
+    url: 'https://blog.lexwu.com',
     // base path
     // root directory for all pages and assets
     base: '/', // e.g., '/blog', '/docs'
@@ -40,7 +40,7 @@ export const themeConfig: ThemeConfig = {
       background: 'oklch(96% 0.005 298)',
       // highlight color
       // used for navbar, selected text, etc
-      highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)', // rgba(255,235,0,0.5)
+      highlight: 'oklch(69.6% 0.17 162.48)', // rgba(255,235,0,0.5)
     },
     dark: {
       // primary color
@@ -48,9 +48,9 @@ export const themeConfig: ThemeConfig = {
       // secondary color
       secondary: 'oklch(77% 0.005 298)',
       // background color
-      background: 'oklch(22% 0.005 298)',
+      background: 'oklch(12.2% 0.051 172.552)',
       // highlight color
-      highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)', // rgba(255,235,0,0.2)
+      highlight: 'oklch(69.6% 0.17 162.48)', // rgba(255,235,0,0.2)
     },
   },
   // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
@@ -58,14 +58,14 @@ export const themeConfig: ThemeConfig = {
   // GLOBAL SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   global: {
     // default language
-    locale: 'zh', // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
+    locale: 'en', // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
     // more languages
     // not fill in the locale code above again, can be an empty array []
-    moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
+    moreLocales: ['en'], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
     // font styles for post text
     fontStyle: 'sans', // sans, serif
     // date format for posts
-    dateFormat: 'YYYY-MM-DD', // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+    dateFormat: 'DAY MONTH YYYY', // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
     // table of contents for posts
     toc: true, // true, false
     // KaTeX math rendering
@@ -82,15 +82,15 @@ export const themeConfig: ThemeConfig = {
     // giscus
     // https://giscus.app/
     giscus: {
-      repo: '',
-      repoId: '',
-      category: '',
-      categoryId: '',
-      mapping: 'pathname',
+      repo: 'lwu877/blog',
+      repoId: 'R_kgDOQF4hig',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOQF4his4Cw3bq',
+      mapping: 'title',
       strict: '0',
       reactionsEnabled: '1',
       emitMetadata: '0',
-      inputPosition: 'bottom',
+      inputPosition: 'top',
     },
     // twikoo
     // https://twikoo.js.org/
@@ -102,10 +102,10 @@ export const themeConfig: ThemeConfig = {
     // https://waline.js.org/en/
     waline: {
       // server url
-      serverURL: 'https://retypeset-comment.radishzz.cc',
+      serverURL: '',
       // emoji url
       emoji: [
-        'https://unpkg.com/@waline/emojis@1.2.0/tw-emoji',
+        '',
         // 'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
         // more emojis: https://waline.js.org/en/guide/features/emoji.html
       ],
@@ -120,15 +120,15 @@ export const themeConfig: ThemeConfig = {
   // SEO SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   seo: {
     // @twitter ID
-    twitterID: '@radishzz_',
+    twitterID: '@lwu877',
     // site verification
     verification: {
       // google search console
       // https://search.google.com/search-console
-      google: 'AUCrz5F1e5qbnmKKDXl2Sf8u6y0kOpEO1wLs6HMMmlM',
+      google: '',
       // bing webmaster tools
       // https://www.bing.com/webmasters
-      bing: '64708CD514011A7965C84DDE1D169F87',
+      bing: '',
       // yandex webmaster
       // https://webmaster.yandex.com
       yandex: '',
@@ -167,11 +167,11 @@ export const themeConfig: ThemeConfig = {
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/radishzzz/astro-theme-retypeset',
+        url: 'https://github.com/lwu877',
       },
       {
         name: 'Email',
-        url: 'email@radishzz.cc',
+        url: 'lex@lexwu.com',
       },
       // {
       //   name: 'X',
