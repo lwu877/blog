@@ -14,7 +14,6 @@ const posts = defineCollection({
       val => val === '' ? undefined : val,
       z.date().optional(),
     ),
-    category: z.string().optional().default('Uncategorized'),
     tags: z.array(z.string()).optional().default([]),
     // Advanced
     draft: z.boolean().optional().default(false),

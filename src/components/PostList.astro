@@ -54,7 +54,7 @@ export interface Props {
 
         {/* mobile post time */}
         <div
-          class="py-0.8 text-3.5 font-serif lg:hidden"
+          class="py-0.8 text-3.5 font-time lg:hidden"
           transition:name={`time-${slug}${lang ? `-${lang}` : ''}`}
           data-disable-theme-transition
         >
@@ -65,7 +65,7 @@ export interface Props {
         </div>
 
         {/* desktop post time */}
-        <div class="hidden text-3.65 font-serif lg:(ml-2.5 inline)">
+        <div class="hidden text-3.65 font-time lg:(ml-2.5 inline)">
           <PostDate
             date={post.data.published}
             minutes={post.remarkPluginFrontmatter.minutes}
