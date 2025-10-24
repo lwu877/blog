@@ -37,10 +37,10 @@ export const themeConfig: ThemeConfig = {
       // used for post text
       secondary: 'oklch(40% 0.005 298)',
       // background color
-      background: 'oklch(96% 0.005 298)',
+      background: 'oklch(97.9% 0.021 166.113)',
       // highlight color
       // used for navbar, selected text, etc
-      highlight: 'oklch(69.6% 0.17 162.48)', // rgba(255,235,0,0.5)
+      highlight: 'oklch(90.5% 0.093 164.15)', // rgba(255,235,0,0.5) oklch(90.5% 0.093 164.15))
     },
     dark: {
       // primary color
@@ -48,9 +48,9 @@ export const themeConfig: ThemeConfig = {
       // secondary color
       secondary: 'oklch(77% 0.005 298)',
       // background color
-      background: 'oklch(12.2% 0.051 172.552)',
+      background: 'oklch(16.2% 0.051 172.552)',
       // highlight color
-      highlight: 'oklch(69.6% 0.17 162.48)', // rgba(255,235,0,0.2)
+      highlight: 'oklch(37.8% 0.077 168.94)', // rgba(255,235,0,0.2)
     },
   },
   // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
