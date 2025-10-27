@@ -1,0 +1,6 @@
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
+  - workerd
+  - swup
+  - simple-git-hooks
